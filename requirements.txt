@@ -34,6 +34,7 @@ seaborn>=0.11.0
 # tflite-support
 # tensorflowjs>=3.9.0  # TF.js export
 # openvino-dev>=2023.0  # OpenVINO export
+# onnxconverter-common>=1.13.0  # ONNX FP16 export
 
 # Extras --------------------------------------
 psutil  # system utilization

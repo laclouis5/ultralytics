@@ -295,7 +295,7 @@ class Exporter:
     @try_export
     def export_onnx(self, prefix=colorstr('ONNX:')):
         """YOLOv8 ONNX export."""
-        requirements = ['onnx>=1.12.0']
+        requirements = ['onnx>=1.12.0', 'onnxconverter-common>=1.13.0']
         if self.args.simplify:
             requirements += ['onnxsim>=0.4.33', 'onnxruntime-gpu' if torch.cuda.is_available() else 'onnxruntime']
         check_requirements(requirements)
